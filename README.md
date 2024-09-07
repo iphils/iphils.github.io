@@ -4,3 +4,5 @@ This is the first ever website I'm publishing
 
 
 I seek to develop a website for bouncing my thoughts
+
+learn more about me at [[about.md]]
