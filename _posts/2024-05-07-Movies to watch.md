@@ -6,7 +6,7 @@ tags:
 layout: post
 title:  "Movies to watch"
 date:   2024-02-02 18:36:29 +0530
-categories: jekyll movie
+categories: movie
 ---
 Thevar Magan - Kamalhassan
 LoTR

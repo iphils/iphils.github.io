@@ -5,9 +5,9 @@ tags:
 layout: post
 title:  "Food Menu"
 date:   2024-01-01 18:36:29 +0530
-categories: jekyll movie
+categories: food
 ---
-Items decided here needs to go to [[shopping list]]
+Items decided here needs to go to [[shopping list]]s
 
 ## Breakfast Options
 
@@ -60,4 +60,4 @@ Soups
 
 Inpiration from Chellammals Manpaanai Samayal shop in Thanjavur
 
-![[Pasted image 20240720191951.png]]
+![My helpful screenshot](/xxx.png)
