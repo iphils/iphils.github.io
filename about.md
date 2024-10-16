@@ -4,4 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is a work in progress 🔨
+Curious about:
+
+Industrial Knowledge Graphs Applications
+Learning on AI Agents
+GIS
+Carbon Market
