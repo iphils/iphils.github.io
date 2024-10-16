@@ -1,3 +1,13 @@
+---
+tags:
+  - read
+
+layout: post
+title:  "Blogs I Read"
+date:   2024-10-16 18:36:29 +0530
+categories: general
+last_modified_at: 
+---
 ## Some of the blogs I found fascinating:
 
 ### General
@@ -10,6 +20,7 @@
     
 2. [Morgan Housel](https://collabfund.com/blog/ideas-that-changed-my-life/)
 
+3. [Paul Graham essays](https://paulgraham.com/articles.html)
 
 ### AI
 
