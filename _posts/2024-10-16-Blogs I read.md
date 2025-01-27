@@ -4,9 +4,6 @@ tags:
 
 layout: post
 title:  "Blogs I Read"
-date:   2024-10-16 18:36:29 +0530
-categories: general
-last_modified_at: 
 ---
 ## Some of the blogs I found fascinating:
 

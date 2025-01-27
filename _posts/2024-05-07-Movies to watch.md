@@ -7,15 +7,13 @@ layout: post
 title:  "Movies to watch"
 date:   2024-02-02 18:36:29 +0530
 categories: movie
-last_modified_at: 
 ---
 
 ## Chinese
 
 Summer Snow ✅
 
-Such a good movie. Grand father has a beautiful face. 
-Acting and making is so good.
+Such a good movie.
 I loved the theme song ( see the ending of the movie for it)
 
 It relates so well even in today life
