@@ -11,7 +11,7 @@ layout: page
 👋, I'm Philips Prince.
 
 - You are probably here because I forced you to. Thanks for coming in.
-- I spent my time reading, writing a little, surfing blogs.
+- I spent my time reading, writing a little and learn by building things.
 - I write my own blogs [here](/blogs)
 
 
