@@ -14,7 +14,7 @@ categories: movie
 
 I have recently fell in love with logo programming and the huge potential it has on the kids in my locality
 
-Here, I'm trying to help keep a back of Cynthia Solomon, who worked with Wally Feurzeig and Seymour Papert, to create the first programming language for children, named Logo.
+Here, I'm trying to help keep a back up of work of Cynthia Solomon, who worked with Wally Feurzeig and Seymour Papert, to create the first programming language for children, named Logo.
 
 Her website is [here](https://logothings.github.io/logothings/)
 
