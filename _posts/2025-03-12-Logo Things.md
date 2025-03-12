@@ -3,12 +3,11 @@ tags:
   - logo
 
 layout: post
-title:  "Logo Things"
-date:   2024-02-02 18:36:29 +0530
-categories: movie
+title:  "A Lesson in Turtle Geometry"
+date:   2025-03-12 11:09:29 +0530
+categories: logo
 ---
 
-## A Lesson in Turtle Geometry
 
 ## Background
 
@@ -30,9 +29,10 @@ THis blog is about me capturing some of its contents so that it stays in the int
 
 How can you make this turtle design better?
 
+![sample stick lines](/assets/img/image.png)
+
 Made a video of it [here](https://www.youtube.com/watch?v=kqHKoZGXRn8)
 
-![alt text](../assets/img/image.png)
 
 To actually reproduce the images above there are at least three things the turtle needs to learn to do.
 

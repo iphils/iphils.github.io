@@ -8,8 +8,8 @@ Curious about:
 
 Industrial Knowledge Graphs Applications
 
-Learning on AI Agents
+Learning about AI Agents
 
-GIS
+Logo Programming
 
-Carbon Market
+
