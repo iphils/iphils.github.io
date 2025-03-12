@@ -30,8 +30,7 @@ THis blog is about me capturing some of its contents so that it stays in the int
 
 How can you make this turtle design better?
 
-
-What a video of it [here](https://www.youtube.com/watch?v=kqHKoZGXRn8)
+Made a video of it [here](https://www.youtube.com/watch?v=kqHKoZGXRn8)
 
 ![alt text](../assets/img/image.png)
 
