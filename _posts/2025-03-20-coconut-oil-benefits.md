@@ -10,7 +10,7 @@ tags: [kairali]
 You can order from [mystore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1)
 Whatsapp, fb or instagram
 
-![Kairali Big Bottle](/assets/img/kairali-big.jpeg)
+![Kairali Big Bottle](/assets/img/kairali-big.jpeg){: style="max-width: 30%; height: 30;" }
 
 ## Benefits
 
