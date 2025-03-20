@@ -12,4 +12,4 @@ The coconut tree is often referred to as the "Tree of Life" due to its many uses
 
 Explore the amazing benefits of the coconut tree!
 
-[Read more about Coconut Oil Benefits](/2025/03/20/coconut-oil-benefits)
+[Read more about Kairali Coconut Milk Oil](/2025/03/20/kairali-coconut-milk-oil)
