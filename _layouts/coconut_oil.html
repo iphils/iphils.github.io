@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            line-height: 1.8;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f1e1c9, #e2d0ba);
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 2px solid #e0cda9;
+        }
+        h1 {
+            color: #b08f5c;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e0cda9;
+            padding-bottom: 10px;
+        }
+        p, li {
+            color: #555;
+            font-size: 1.1em;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <p>{{ content }}</p>
+    </div>
+</body>
+</html>
