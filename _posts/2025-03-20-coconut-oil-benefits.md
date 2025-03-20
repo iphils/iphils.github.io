@@ -21,3 +21,5 @@ Coconut oil is known for its amazing benefits. It can be used for cooking, skinc
 - **Cooking**: It adds a delicious flavor to your dishes and is considered healthier than many other fats.
 
 Explore how coconut oil can improve your daily routine!
+
+Know more about coconuts [here](/2025/03/20/coconut-tree)
