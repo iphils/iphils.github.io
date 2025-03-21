@@ -16,6 +16,10 @@ Explore how coconut oil can improve your daily routine!
 
 Know more about coconuts [here](/2025/03/20/coconut-tree)
 
+## How to Make Coconut Oil
+
+Discover a step-by-step guide on [How to Make Coconut Oil](/2025/03/21/how-to-make-coconut-oil) using traditional methods.
+
 ## How to Order?
 
 You can order from:
