@@ -5,7 +5,7 @@ description: Traditional coconut milk oil for healthy hair and skin.
 tags: [kairali, coconut oil, natural, hair care, skin care]
 ---
 
-![Kairali Coconut Milk Oil](/assets/img/kairali-big.jpg){: style="max-width: 50%;" }
+![Kairali Coconut Milk Oil](/assets/img/k-small.jpg){: style="max-width: 10%;" }
 
 ## Experience the Goodness of Tradition
 
