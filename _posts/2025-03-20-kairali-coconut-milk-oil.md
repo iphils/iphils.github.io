@@ -60,4 +60,6 @@ Or contact us via:
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 32px; height: 32px; transition: transform 0.2s;">
 </a>
 
+Learn what experts have to say about Virgin Coconut Oil [here](/2025/03/20/benefits)
 ## Featured Video
+
