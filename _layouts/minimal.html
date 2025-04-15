@@ -8,7 +8,74 @@ layout: none
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQNMJ2EVT6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KQNMJ2EVT6');
+    </script>
+    <!-- End Google Analytics -->
     <style>
+        /* Hero background for Kairali Coconut Milk Oil */
+        .hero-bg {
+            position: relative;
+            min-height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background: linear-gradient(rgba(176,143,92,0.6), rgba(241,225,201,0.7)), url('/assets/img/banner-image.jpeg') center center/cover no-repeat fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .kairali-premium {
+            background: rgba(255, 255, 255, 0.65);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            border-radius: 16px;
+            border: 2px solid #b08f5c;
+            padding: 48px 32px;
+            max-width: 800px;
+            margin: 60px auto;
+            position: relative;
+            z-index: 1;
+        }
+        .kairali-content {
+            background: transparent !important;
+        }
+        .kairali-premium h1 {
+            color: #b08f5c;
+            font-size: 2.7em;
+            font-family: 'Poppins', serif;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba(176,143,92,0.08);
+        }
+        .kairali-content {
+            color: #3d2c13;
+            font-size: 1.18em;
+            font-family: 'Lora', serif;
+            line-height: 1.8;
+        }
+        .kairali-content img {
+            display: block;
+            margin: 0 auto 24px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px 0 rgba(176,143,92,0.13);
+            opacity: 0.95;
+        }
+        /* Responsive adjustments for hero */
+        @media (max-width: 900px) {
+            .kairali-premium {
+                padding: 24px 8px;
+            }
+        }
+        @media (max-width: 600px) {
+            .kairali-premium {
+                padding: 8px 2px;
+            }
+        }
+
         body {
           font-family: 'Lora', serif; /* Or 'Merriweather', serif; */
           color: #4a4a4a; /* Dark gray for body text */
@@ -33,7 +100,7 @@ layout: none
             line-height: 1.6;
             padding: 20px;
             background: linear-gradient(to bottom, #f1e1c9, #e2d0ba);
-            color: #333;
+ color: #333;
         }
         .container {
             max-width: 1200px;
@@ -50,21 +117,187 @@ layout: none
         }
         p, li {
             color: #555;
-            font-size: 1em;
+ font-size: 1em;
         }
         ul {
             margin-bottom: 20px;
-            padding-left: 20px;
+ padding-left: 20px;
         }
         li {
             margin-bottom: 10px;
         }
+/* The sidebar code should be grouped into the existing style block for consistency and maintainability. */
+.sidebar {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 100vh; /* Make the sidebar run from top to bottom */
+  position: fixed; /* Keep the sidebar fixed during scrolling */
+  top: 0;          /* Align to the top of the viewport */
+  left: 0;
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  background-color: #f9f9f9; /* Optional: Add a background color to the sidebar */
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth toggle */
+}
+
+.sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar a {
+  display: block; /* Make links fill the entire list item */
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar a.active {
+  background-color: #b08f5c; /* Highlight color for the active page */
+  color: white;
+}
+
+/* Adjust the body to accommodate the fixed sidebar */
+body {
+    margin-left: 220px; /* Width of the sidebar + margin */
+    transition: margin-left 0.3s ease-in-out; /* Add transition for smooth toggle */
+}
+
+/* Ensure the container doesn't negate the body's margin */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #e0cda9;
+    margin-left: auto; /* Override any inherited margin-left */
+    margin-right: auto; /* Keep it centered */
+}
+
+/* Style for the navigation toggle */
+.nav-toggle {
+  font-size: 1.7em;
+  cursor: pointer;
+  padding: 12px 18px;
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  z-index: 1002;
+  transition: background 0.2s;
+}
+.nav-toggle:hover {
+  background: rgba(255,255,255,1);
+}
+@media (max-width: 600px) {
+  .nav-toggle {
+    top: 8px;
+    left: 8px;
+    font-size: 1.3em;
+    padding: 8px 12px;
+  }
+}
+
+/* Hide the sidebar */
+.sidebar.hide {
+  transform: translateX(-220px); /* Hide the sidebar off-screen */
+}
+
+body.hide {
+  margin-left: 20px; /* Restore the body margin when sidebar is hidden */
+}
+body.sidebar-collapsed {
+  margin-left: 20px !important;
+}
+@media (max-width: 768px) {
+  body.sidebar-collapsed {
+    margin-left: 0 !important;
+  }
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show the toggle on smaller screens */
+  }
+  .sidebar {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  body {
+    margin-left: 20px; /* remove body magin */
+  }
+
+  .sidebar.hide {
+    transform: translateX(0); /* Restore the sidebar position when toggled */
+  }
+
+}
+
     </style>
 </head>
 <body>
+    <div class="nav-toggle">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="/2025/03/20/kairali-coconut-milk-oil.html" class="{% if page.url == '/2025/03/20/kairali-coconut-milk-oil.html' %}active{% endif %}">Kairali Coconut Milk Oil</a></li>
+            <li><a href="/2025/03/20/benefits.html" class="{% if page.url == '/2025/03/20/benefits.html' %}active{% endif %}">Benefits of Coconut Oil</a></li>
+            <li><a href="/2025/03/21/how-to-make-coconut-oil.html" class="{% if page.url == '/2025/03/21/how-to-make-coconut-oil.html' %}active{% endif %}">How to Make Coconut Oil</a></li>
+        </ul>
+    </div>
+    {% if page.title == "Kairali Coconut Milk Oil" %}
+    <div class="hero-bg">
+        <div class="container kairali-premium">
+            <h1>{{ page.title }}</h1>
+            <div class="kairali-content">{{ content }}</div>
+        </div>
+    </div>
+    {% else %}
     <div class="container">
         <h1>{{ page.title }}</h1>
         <p>{{ content }}</p>
     </div>
+    {% endif %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const sidebar = document.querySelector('.sidebar');
+            const body = document.querySelector('body');
+
+            navToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('hide');
+                document.body.classList.toggle('sidebar-collapsed');
+            });
+            // Ensure sidebar is always accessible when resizing
+            window.addEventListener('resize', function() {
+                if(window.innerWidth > 768) {
+                    sidebar.classList.remove('hide');
+                    document.body.classList.remove('sidebar-collapsed');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
