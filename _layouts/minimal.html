@@ -133,18 +133,59 @@ layout: none
   margin-right: 20px;
   padding: 10px;
   border: 1px solid #ccc;
-  height: 100vh; /* Make the sidebar run from top to bottom */
-  position: fixed; /* Keep the sidebar fixed during scrolling */
-  top: 0;          /* Align to the top of the viewport */
+  height: 100vh;
+  position: fixed;
+  top: 0;
   left: 0;
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  background-color: #f9f9f9; /* Optional: Add a background color to the sidebar */
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth toggle */
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  z-index: 1001;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    width: 80vw;
+    max-width: 320px;
+    min-width: 180px;
+    margin-right: 0;
+    background: rgba(249, 249, 249, 0.98);
+    box-shadow: 2px 0 16px rgba(0,0,0,0.08);
+    border-right: 1px solid #e0cda9;
+    border-radius: 0 12px 12px 0;
+    /* Start hidden off-screen */
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .sidebar:not(.hide) {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  body.sidebar-collapsed .sidebar {
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  body:not(.sidebar-collapsed) .sidebar {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .hero-bg, .container {
+    margin-left: 0 !important;
+  }
 }
 
 .sidebar h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  margin-top: 60px;
+}
+@media (max-width: 600px) {
+  .sidebar h2 {
+    margin-top: 70px;
+  }
 }
 
 .sidebar ul {
@@ -176,6 +217,11 @@ layout: none
 body {
     margin-left: 220px; /* Width of the sidebar + margin */
     transition: margin-left 0.3s ease-in-out; /* Add transition for smooth toggle */
+}
+@media (max-width: 900px) {
+  body {
+    margin-left: 0 !important;
+  }
 }
 
 /* Ensure the container doesn't negate the body's margin */
