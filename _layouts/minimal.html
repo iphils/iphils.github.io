@@ -131,8 +131,8 @@ layout: none
   width: 200px;
   float: left;
   margin-right: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 18px 10px 10px 10px;
+  border: 1px solid #e0cda9;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -141,6 +141,8 @@ layout: none
   background-color: #f9f9f9;
   transition: transform 0.3s ease-in-out, opacity 0.3s;
   z-index: 1001;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(176,143,92,0.10);
 }
 @media (max-width: 900px) {
   .sidebar {
@@ -191,6 +193,7 @@ layout: none
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin-top: 18px;
 }
 
 .sidebar li {
@@ -198,19 +201,31 @@ layout: none
 }
 
 .sidebar a {
-  display: block; /* Make links fill the entire list item */
-  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  border-radius: 12px;
   text-decoration: none;
   color: #333;
+  background: transparent;
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+  box-shadow: 0 1px 4px rgba(176,143,92,0.04);
+  font-size: 1.08em;
 }
 
 .sidebar a:hover {
-  background-color: #f0f0f0;
+  background-color: #f5e7d2;
+  color: #b08f5c;
+  box-shadow: 0 2px 8px rgba(176,143,92,0.08);
 }
 
 .sidebar a.active {
-  background-color: #b08f5c; /* Highlight color for the active page */
+  background-color: #b08f5c;
   color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(176,143,92,0.14);
 }
 
 /* Adjust the body to accommodate the fixed sidebar */
@@ -308,9 +323,9 @@ body.sidebar-collapsed {
     <div class="sidebar">
         <h2>Navigation</h2>
         <ul>
-            <li><a href="/2025/03/20/kairali-coconut-milk-oil.html" class="{% if page.url == '/2025/03/20/kairali-coconut-milk-oil.html' %}active{% endif %}">Kairali Coconut Milk Oil</a></li>
-            <li><a href="/2025/03/20/benefits.html" class="{% if page.url == '/2025/03/20/benefits.html' %}active{% endif %}">Benefits of Coconut Oil</a></li>
-            <li><a href="/2025/03/21/how-to-make-coconut-oil.html" class="{% if page.url == '/2025/03/21/how-to-make-coconut-oil.html' %}active{% endif %}">How to Make Coconut Oil</a></li>
+            <li><a href="/2025/03/20/kairali-coconut-milk-oil.html" class="{% if page.url == '/2025/03/20/kairali-coconut-milk-oil.html' %}active{% endif %}"><span style="display:inline-flex;align-items:center;"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-right:5px;"><path d="M11 2C11.552 2 12 2.448 12 3V8.5C12 8.776 12.224 9 12.5 9C14.985 9 17 11.015 17 13.5C17 16.537 14.314 19 11 19C7.686 19 5 16.537 5 13.5C5 11.015 7.015 9 9.5 9C9.776 9 10 8.776 10 8.5V3C10 2.448 10.448 2 11 2Z" fill="#b08f5c"/><ellipse cx="11" cy="14.5" rx="3.5" ry="3" fill="#fffbe7"/></svg> Kairali Coconut Milk Oil</span></a></li>
+            <li><a href="/2025/03/20/benefits.html" class="{% if page.url == '/2025/03/20/benefits.html' %}active{% endif %}"><span style="display:inline-flex;align-items:center;"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-right:5px;"><polygon points="10,2 12.5,7.5 18,8 13.5,12 14.5,18 10,15 5.5,18 6.5,12 2,8 7.5,7.5" fill="#b08f5c"/></svg> Benefits of Coconut Oil</span></a></li>
+            <li><a href="/2025/03/21/how-to-make-coconut-oil.html" class="{% if page.url == '/2025/03/21/how-to-make-coconut-oil.html' %}active{% endif %}"><span style="display:inline-flex;align-items:center;"> <svg width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-right:5px;"><rect x="7" y="5" width="8" height="11" rx="3" fill="#fffbe7" stroke="#b08f5c" stroke-width="1.5"/><rect x="9.5" y="2" width="3" height="4" rx="1.5" fill="#b08f5c"/><path d="M13 16c.5 1 1.5 2 2.5 2" stroke="#b08f5c" stroke-width="1.2" stroke-linecap="round"/><path d="M15.5 16c.5-.5 1.5-1.5 2-2.5" stroke="#7ca86e" stroke-width="1.2" stroke-linecap="round"/></svg> How to Make Coconut Oil</span></a></li>
         </ul>
     </div>
     {% if page.title == "Kairali Coconut Milk Oil" %}
