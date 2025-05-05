@@ -5,7 +5,31 @@ description: Traditional coconut milk oil for healthy hair and skin.
 tags: [kairali, coconut oil, natural, hair care, skin care]
 ---
 
-![Kairali Coconut Milk Oil](/assets/img/k-small.jpg){: style="max-width: 10%;" }
+## About Us
+
+Kairali Coconut Milk Oil is a traditional form of coconut virgin oil processed through high-grade coconut milk cream. Started in the year 1990.
+
+Our product comes in 4 variants
+
+![Kairali Coconut Milk Oil](/assets/img/250-poster.png){: style="max-width: 50%;" }
+
+## How to Order?
+
+[Shop Now on MyStore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1){: .button }
+
+Or contact us via:
+
+<a href="https://wa.me/918281447237" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
+    <img src="/assets/img/Digital_Glyph_Dark_Green.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
+</a>
+<a href="https://www.facebook.com/kairalico/" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
+</a>
+<a href="https://www.instagram.com/kairali_oil/" style="display: inline-block; vertical-align: middle;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 32px; height: 32px; transition: transform 0.2s;">
+</a>
+
+Learn what experts have to say about Virgin Coconut Oil [here](/2025/03/20/benefits)
 
 ## Experience the Goodness of Tradition
 
@@ -40,26 +64,6 @@ Kairali Coconut Milk Oil is a time-honored remedy crafted from the purest coconu
 - വിട്ടുമാറാത്ത ജലദോഷം എന്നിവയെ തടയാൻ സഹായിക്കുന്നു
 - നാളികേരത്തിലെ സർവ്വ ഔഷധമൂല്യങ്ങളും അട ങ്ങിയിരിക്കുന്നതിനാൽ ഉണർവിനും ഉന്മേഷത്തിനും സഹായകമായത്.
 
-## About Us
 
-Kairali Coconut Milk Oil is a traditional form of coconut virgin oil processed through high-grade coconut milk cream. Started in the year 1990.
 
-## How to Order?
-
-[Shop Now on MyStore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1){: .button }
-
-Or contact us via:
-
-<a href="https://wa.me/918281447237" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
-    <img src="/assets/img/Digital_Glyph_Dark_Green.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
-<a href="https://www.facebook.com/kairalico/" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
-<a href="https://www.instagram.com/kairali_oil/" style="display: inline-block; vertical-align: middle;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
-
-Learn what experts have to say about Virgin Coconut Oil [here](/2025/03/20/benefits)
-## Featured Video
 
