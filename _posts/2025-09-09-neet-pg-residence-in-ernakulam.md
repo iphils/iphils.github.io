@@ -58,3 +58,5 @@ Here are images of the residence and its facilities. Room layouts are common for
 Find us easily on Google Maps:
 
 [View residence location on Google Maps](https://maps.app.goo.gl/CJh9QaTCQ4UxRw7k9)
+
+Contact us [here](https://wa.me/8281447237)
