@@ -28,34 +28,33 @@ Adjoining the residence, there is a fully air-conditioned study hall for quiet s
 - **Internet access (WiFi)** available for all residents
 - **Common washing machine** for residents' laundry needs
 
-- **PGs (Paying Guest)**: Many homes and flats offer PG facilities with food/laundry.
-
-## Key Localities
-
-- **Kaloor, Edappally, Kakkanad:** Close to Aster Medcity, Amrita, Rajagiri, CIMAR, and other popular hospitals/colleges.
-- **Medical Trust, Palarivattom, Aluva:** Good for city-center and suburban options.
-
-## Rent & Living Costs
-
 ## Gallery
 
-Below is an image of a typical room. The same room setup is used for single, double, and triple sharing—extra beds are added or removed based on your preference (for a single room, extra beds will be removed).
+Here are images of the residence and its facilities. Room layouts are common for all sharing types; for a single room, the extra beds will be removed as needed.
 
-![Room Example](path_to_room_image.jpg)
+![Room view 1](/assets/img/docnest/room1.jpeg){: style="max-width: 50%;" }
+*Room layout: beds, bright-space setup.*
 
-<!-- Replace 'path_to_room_image.jpg' with the actual image path or URL when available -->
+![Room view 2](/assets/img/docnest/room2.jpeg){: style="max-width: 50%;" }
+*Alternate angle showing spacious layout and beds.*
 
+![Corridor to rooms](/assets/img/docnest/corridoor.jpeg){: style="max-width: 50%;" }
+*Spacious corridor leading to the rooms.*
 
+![Attached washroom](/assets/img/docnest/washroom.jpg){: style="max-width: 50%;" }
+*Modern attached bathroom in every room.*
 
-## Tips for Residents
+![In-room lockers](/assets/img/docnest/locker.jpeg){: style="max-width: 50%;" }
+*Personal lockers available inside every room.*
 
-- Join college/department WhatsApp groups to find or share flat listings.
-- Always visit the property and talk to current tenants if possible.
-- Prioritize accommodation near your work/hospital to save commute time.
-- Factor in proximity to food outlets, convenience stores, and transport.
+![Wardrobe and storage](/assets/img/docnest/wardrobe.jpeg){: style="max-width: 50%;" }
+*Wardrobe for each resident (view 1).* 
 
-## Bonus: Life in Ernakulam
+![Wardrobe (variant)](/assets/img/docnest/wardrobe2.jpeg){: style="max-width: 50%;" }
+*Wardrobe/storage (alternative view).* 
 
-Ernakulam is lively and safe, with great food, friendly people, and access to beaches, malls, and vibrant city life. The support system among residents is strong—make the best of it!
+## Location
 
-**Have questions or want to share tips? Comment below or reach out through the contact page!**
+Find us easily on Google Maps:
+
+[View residence location on Google Maps](https://maps.app.goo.gl/CJh9QaTCQ4UxRw7k9)
