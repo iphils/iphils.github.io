@@ -35,9 +35,6 @@ Here are images of the residence and its facilities. Room layouts are common for
 ![Room view 1](/assets/img/docnest/room1.jpeg){: style="max-width: 50%;" }
 *Room layout: beds, bright-space setup.*
 
-![Room view 2](/assets/img/docnest/room2.jpeg){: style="max-width: 50%;" }
-*Alternate angle showing spacious layout and beds.*
-
 ![Corridor to rooms](/assets/img/docnest/corridoor.jpeg){: style="max-width: 50%;" }
 *Spacious corridor leading to the rooms.*
 
@@ -55,8 +52,6 @@ Here are images of the residence and its facilities. Room layouts are common for
 
 ## Location
 
-Find us easily on Google Maps:
-
-[View residence location on Google Maps](https://maps.app.goo.gl/CJh9QaTCQ4UxRw7k9)
+Find us easily on Google Maps(https://maps.app.goo.gl/CJh9QaTCQ4UxRw7k9):
 
 Contact us [here](https://wa.me/8281447237)
