@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Delivery Calculator – Kairali Coconut Milk Oil
+title: Order Cost Calculator – Kairali Coconut Milk Oil
 permalink: /kairali-delivery/
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ permalink: /kairali-delivery/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery Calculator – Kairali Coconut Milk Oil</title>
+    <title>Order Cost Calculator – Kairali Coconut Milk Oil</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQNMJ2EVT6"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -171,6 +171,14 @@ permalink: /kairali-delivery/
         .result-charge-value { font-family: 'Poppins', sans-serif; font-size: 2.8em; font-weight: 700; color: #f5c878; line-height: 1; }
         .result-charge-note { font-size: 0.78em; color: rgba(255,255,255,.5); margin-top: 4px; }
 
+        .breakdown { margin: 4px 0 2px; }
+        .breakdown-row { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Poppins', sans-serif; padding: 7px 0; }
+        .breakdown-row .bd-label { font-size: 0.9em; color: rgba(255,255,255,.7); }
+        .breakdown-row .bd-value { font-size: 1.05em; font-weight: 600; color: #ffe8c0; }
+        .breakdown-row.total { border-top: 1px solid rgba(255,255,255,.15); margin-top: 4px; padding-top: 12px; }
+        .breakdown-row.total .bd-label { font-size: 0.95em; font-weight: 700; color: #fff; letter-spacing: 0.5px; text-transform: uppercase; }
+        .breakdown-row.total .bd-value { font-size: 1.9em; font-weight: 700; color: #f5c878; }
+
         .result-disclaimer { margin-top: 18px; font-size: 0.78em; color: rgba(255,255,255,.45); line-height: 1.5; border-top: 1px solid rgba(255,255,255,.10); padding-top: 14px; }
 
         /* ── Loading spinner ── */
@@ -187,6 +195,40 @@ permalink: /kairali-delivery/
 
         .tariff-note { font-size: 0.76em; color: #a0846a; margin-top: 10px; text-align: center; }
         .tariff-note a { color: #b08f5c; }
+
+        /* ── Payment ── */
+        .pay-intro { font-size: 0.95em; color: #5c4020; margin-bottom: 18px; line-height: 1.5; }
+        .pay-qr-wrap { display: flex; justify-content: center; }
+        .pay-qr {
+            width: 100%; max-width: 320px; height: auto;
+            border: 1.5px solid #e0cda9; border-radius: 12px;
+            background: #fff; padding: 8px;
+            box-shadow: 0 2px 12px rgba(176,143,92,.15);
+        }
+        .pay-note { font-size: 0.85em; color: #7a6040; margin-top: 14px; text-align: center; font-family: 'Poppins', sans-serif; line-height: 1.7; }
+        .pay-verify { display: inline-block; margin-top: 6px; font-size: 0.92em; color: #96773d; }
+        .whatsapp-btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            padding: 14px 28px; font-family: 'Poppins', sans-serif;
+            font-weight: 700; font-size: 1em; letter-spacing: 0.3px;
+            background: #25D366; color: #fff; text-decoration: none;
+            border-radius: 12px; box-shadow: 0 4px 14px rgba(37,211,102,.3);
+            transition: background 0.2s, transform 0.1s;
+        }
+        .whatsapp-btn:hover { background: #1da851; }
+        .whatsapp-btn:active { transform: scale(0.97); }
+        .whatsapp-btn { border: none; cursor: pointer; }
+
+        .field-group { display: flex; flex-direction: column; gap: 14px; margin-bottom: 20px; }
+        .field label { display: block; font-size: 0.82em; color: #7a6040; margin-bottom: 6px; font-family: 'Poppins', sans-serif; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+        .field input, .field textarea {
+            width: 100%; padding: 12px 16px; font-size: 1em; font-family: 'Lora', serif;
+            border: 1.5px solid #d4b896; border-radius: 10px; outline: none;
+            background: #fffdf8; color: #3d2c13; resize: vertical;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .field input:focus, .field textarea:focus { border-color: #b08f5c; box-shadow: 0 0 0 3px rgba(176,143,92,.12); }
+        .field input.error, .field textarea.error { border-color: #c0392b; }
     </style>
 </head>
 <body>
@@ -215,8 +257,8 @@ permalink: /kairali-delivery/
 
     <div class="page-header">
         <div class="brand">Kairali Coconut Milk Oil</div>
-        <h1>Delivery Charges Calculator</h1>
-        <p>Find out the Speed Post delivery cost to your doorstep.</p>
+        <h1>Order Cost Calculator</h1>
+        <p>Calculate your order total including Speed Post delivery to your doorstep.</p>
     </div>
 
     <!-- Step 1: Products -->
@@ -226,7 +268,7 @@ permalink: /kairali-delivery/
             <div class="product-item" id="item-60" data-weight="60">
                 <div>
                     <div class="product-label">60 g</div>
-                    <div class="product-sub">Small bottle</div>
+                    <div class="product-sub">Small bottle &bull; &#8377; 110</div>
                 </div>
                 <div class="qty-control">
                     <button class="qty-btn" onclick="changeQty('q60', -1)">&#8722;</button>
@@ -237,7 +279,7 @@ permalink: /kairali-delivery/
             <div class="product-item" id="item-100" data-weight="100">
                 <div>
                     <div class="product-label">100 g</div>
-                    <div class="product-sub">Standard bottle</div>
+                    <div class="product-sub">Standard bottle &bull; &#8377; 200</div>
                 </div>
                 <div class="qty-control">
                     <button class="qty-btn" onclick="changeQty('q100', -1)">&#8722;</button>
@@ -248,7 +290,7 @@ permalink: /kairali-delivery/
             <div class="product-item" id="item-250" data-weight="250">
                 <div>
                     <div class="product-label">250 g</div>
-                    <div class="product-sub">Family bottle</div>
+                    <div class="product-sub">Family bottle &bull; &#8377; 436</div>
                 </div>
                 <div class="qty-control">
                     <button class="qty-btn" onclick="changeQty('q250', -1)">&#8722;</button>
@@ -259,7 +301,7 @@ permalink: /kairali-delivery/
             <div class="product-item" id="item-500" data-weight="500">
                 <div>
                     <div class="product-label">500 g</div>
-                    <div class="product-sub">Value bottle</div>
+                    <div class="product-sub">Value bottle &bull; &#8377; 866</div>
                 </div>
                 <div class="qty-control">
                     <button class="qty-btn" onclick="changeQty('q500', -1)">&#8722;</button>
@@ -305,25 +347,72 @@ permalink: /kairali-delivery/
             </div>
         </div>
         <hr class="result-divider">
-        <div class="result-charge-label">Speed Post Delivery Charge (incl. GST)</div>
-        <div class="result-charge-value" id="resCharge">—</div>
-        <div class="result-charge-note" id="resChargeNote"></div>
-        <div class="result-disclaimer">
-            Weight shown is total product weight plus 150 g for the outer box. Actual charge is determined at the post office counter by actual weight. Tariff as per India Post Speed Post Parcel rates effective 01.10.2025.
+        <div class="breakdown">
+            <div class="breakdown-row">
+                <span class="bd-label">Order Value</span>
+                <span class="bd-value" id="resOrderValue">—</span>
+            </div>
+            <div class="breakdown-row">
+                <span class="bd-label">Speed Post Delivery (incl. GST)</span>
+                <span class="bd-value" id="resCharge">—</span>
+            </div>
+            <div class="breakdown-row total">
+                <span class="bd-label">Total Payable</span>
+                <span class="bd-value" id="resTotal">—</span>
+            </div>
         </div>
+        <div class="result-charge-note" id="resChargeNote"></div>
     </div>
 
-    <p class="tariff-note">Speed Post Parcel Tariff (incl. GST) effective 01.10.2025 &bull; Compiled by Manu V R, DPM-I, Kottayam HO</p>
+    <!-- Step 3: Payment -->
+    <div class="card">
+        <h2>Step 3 &mdash; Make Payment</h2>
+        <p class="pay-intro">Scan the QR code below with any UPI app (GPay, PhonePe, Paytm, BHIM) and pay the <strong>Total Payable</strong> amount shown above.</p>
+        <div class="pay-qr-wrap">
+            <img src="/assets/img/vkp-payment-qr.png" alt="Scan &amp; Pay UPI QR code" class="pay-qr">
+        </div>
+        <p class="pay-note">Pay to: <strong>VKP Industries</strong><br>
+        UPI ID: <strong>Getepay.esafbank665898@icici</strong> &bull; ESAF Small Finance Bank<br>
+        <span class="pay-verify">Please verify the payee name shows as <strong>VKP Industries</strong> in your UPI app before paying.</span></p>
+    </div>
+
+    <!-- Step 4: Confirm order -->
+    <div class="card">
+        <h2>Step 4 &mdash; Confirm Your Order</h2>
+        <p class="pay-intro">Fill in the delivery details below. When you tap the WhatsApp button, your full order summary and these details are sent to us automatically &mdash; then just attach your payment screenshot.</p>
+        <div class="field-group">
+            <div class="field">
+                <label for="custName">Recipient Full Name</label>
+                <input type="text" id="custName" placeholder="e.g. Anjana Menon" autocomplete="name">
+            </div>
+            <div class="field">
+                <label for="custPhone">Contact Number</label>
+                <input type="tel" id="custPhone" placeholder="10-digit mobile number" inputmode="numeric" autocomplete="tel">
+            </div>
+            <div class="field">
+                <label for="custAddress">Full Delivery Address (with Pincode)</label>
+                <textarea id="custAddress" rows="3" placeholder="House/Flat, Street, Area, City, State &mdash; PIN" autocomplete="street-address"></textarea>
+            </div>
+            <div class="error-msg" id="orderError"></div>
+        </div>
+        <div class="pay-qr-wrap">
+            <button type="button" class="whatsapp-btn" onclick="sendWhatsApp()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.52 0-3-.41-4.29-1.18l-.31-.18-3.12.82.83-3.04-.2-.32a8.2 8.2 0 01-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.54-3.7 8.26-8.24 8.26zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.25 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+            Send Order on WhatsApp
+        </button>
+        </div>
+        <p class="pay-note">Order goes to <strong>VKP Industries</strong> &bull; WhatsApp <strong>+91 82814 47237</strong></p>
+    </div>
 
 </div>
 
 <script>
 // ── Quantities ──────────────────────────────────────────────────────────────
 const products = {
-    q60:  { itemId: 'item-60',  weight: 60  },
-    q100: { itemId: 'item-100', weight: 100 },
-    q250: { itemId: 'item-250', weight: 250 },
-    q500: { itemId: 'item-500', weight: 500 },
+    q60:  { itemId: 'item-60',  weight: 60,  price: 110 },
+    q100: { itemId: 'item-100', weight: 100, price: 200 },
+    q250: { itemId: 'item-250', weight: 250, price: 436 },
+    q500: { itemId: 'item-500', weight: 500, price: 866 },
 };
 
 function changeQty(id, delta) {
@@ -342,6 +431,17 @@ function totalWeight() {
     }
     if (w > 0) w += 150; // outer box
     return w;
+}
+
+let lastResult = null;
+
+function totalOrderValue() {
+    let v = 0;
+    for (const [id, p] of Object.entries(products)) {
+        const qty = parseInt(document.getElementById(id).textContent) || 0;
+        v += qty * p.price;
+    }
+    return v;
 }
 
 function totalQty() {
@@ -456,8 +556,13 @@ async function calculate() {
         document.getElementById('resDistance').textContent = `~${Math.round(dist)} km`;
         document.getElementById('resZone').innerHTML = `<span class="zone-badge ${zone.cls}">${zone.label}</span>`;
         document.getElementById('resWeight').textContent = `~${weight} g`;
+        const orderValue = totalOrderValue();
+        document.getElementById('resOrderValue').textContent = `₹ ${orderValue}`;
         document.getElementById('resCharge').textContent = `₹ ${charge}`;
-        document.getElementById('resChargeNote').textContent = `Based on ${weight}g shipping weight via Speed Post`;
+        document.getElementById('resTotal').textContent = `₹ ${orderValue + charge}`;
+        document.getElementById('resChargeNote').textContent = `Delivery based on ${weight}g shipping weight via Speed Post`;
+
+        lastResult = { destination: placeName || pin, charge, orderValue, total: orderValue + charge };
         resultCard.classList.add('visible');
         resultCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
@@ -473,6 +578,58 @@ async function calculate() {
 document.getElementById('destPin').addEventListener('keydown', e => {
     if (e.key === 'Enter') calculate();
 });
+
+// ── Send order on WhatsApp ────────────────────────────────────────────────────
+const WHATSAPP_NUMBER = '918281447237';
+
+function sendWhatsApp() {
+    const orderError = document.getElementById('orderError');
+    const nameEl = document.getElementById('custName');
+    const phoneEl = document.getElementById('custPhone');
+    const addrEl = document.getElementById('custAddress');
+    orderError.textContent = '';
+    [nameEl, phoneEl, addrEl].forEach(el => el.classList.remove('error'));
+
+    if (totalQty() === 0) {
+        orderError.textContent = 'Please select your products in Step 1.';
+        return;
+    }
+    if (!lastResult || lastResult.orderValue !== totalOrderValue()) {
+        orderError.textContent = 'Please calculate the delivery charge in Step 2 first (recalculate if you changed quantities).';
+        return;
+    }
+
+    const name = nameEl.value.trim();
+    const phone = phoneEl.value.replace(/\D/g, '');
+    const addr = addrEl.value.trim();
+    if (!name) { nameEl.classList.add('error'); orderError.textContent = 'Please enter the recipient\'s full name.'; return; }
+    if (phone.length < 10) { phoneEl.classList.add('error'); orderError.textContent = 'Please enter a valid 10-digit contact number.'; return; }
+    if (addr.length < 10) { addrEl.classList.add('error'); orderError.textContent = 'Please enter the full delivery address with pincode.'; return; }
+
+    let itemLines = '';
+    for (const [id, p] of Object.entries(products)) {
+        const qty = parseInt(document.getElementById(id).textContent) || 0;
+        if (qty > 0) itemLines += `• ${p.weight} g  × ${qty}  =  ₹${qty * p.price}\n`;
+    }
+
+    const msg =
+`*New Order — Kairali Coconut Milk Oil*
+
+*Order Items*
+${itemLines}
+Order Value: ₹${lastResult.orderValue}
+Speed Post Delivery: ₹${lastResult.charge}
+*Total Payable: ₹${lastResult.total}*
+
+*Delivery Details*
+Name: ${name}
+Contact: ${phone}
+Address: ${addr}
+
+I have made the payment — payment screenshot attached.`;
+
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+}
 
 // ── Sidebar toggle ────────────────────────────────────────────────────────────
 document.getElementById('navToggle').addEventListener('click', () => {
