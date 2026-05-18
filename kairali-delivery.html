@@ -223,7 +223,7 @@ permalink: /kairali-delivery/
     <div class="card">
         <h2>Step 1 &mdash; Select Your Order</h2>
         <div class="product-grid">
-            <div class="product-item" id="item-60" data-weight="200">
+            <div class="product-item" id="item-60" data-weight="60">
                 <div>
                     <div class="product-label">60 g</div>
                     <div class="product-sub">Small bottle</div>
@@ -234,7 +234,7 @@ permalink: /kairali-delivery/
                     <button class="qty-btn" onclick="changeQty('q60', 1)">&#43;</button>
                 </div>
             </div>
-            <div class="product-item" id="item-100" data-weight="280">
+            <div class="product-item" id="item-100" data-weight="100">
                 <div>
                     <div class="product-label">100 g</div>
                     <div class="product-sub">Standard bottle</div>
@@ -245,7 +245,7 @@ permalink: /kairali-delivery/
                     <button class="qty-btn" onclick="changeQty('q100', 1)">&#43;</button>
                 </div>
             </div>
-            <div class="product-item" id="item-250" data-weight="500">
+            <div class="product-item" id="item-250" data-weight="250">
                 <div>
                     <div class="product-label">250 g</div>
                     <div class="product-sub">Family bottle</div>
@@ -256,7 +256,7 @@ permalink: /kairali-delivery/
                     <button class="qty-btn" onclick="changeQty('q250', 1)">&#43;</button>
                 </div>
             </div>
-            <div class="product-item" id="item-500" data-weight="850">
+            <div class="product-item" id="item-500" data-weight="500">
                 <div>
                     <div class="product-label">500 g</div>
                     <div class="product-sub">Value bottle</div>
@@ -309,7 +309,7 @@ permalink: /kairali-delivery/
         <div class="result-charge-value" id="resCharge">—</div>
         <div class="result-charge-note" id="resChargeNote"></div>
         <div class="result-disclaimer">
-            Shipping weight is estimated (product + bottle + packaging). Actual charge is determined at the post office counter by actual weight. Tariff as per India Post Speed Post Parcel rates effective 01.10.2025.
+            Weight shown is total product weight plus 150 g for the outer box. Actual charge is determined at the post office counter by actual weight. Tariff as per India Post Speed Post Parcel rates effective 01.10.2025.
         </div>
     </div>
 
@@ -320,10 +320,10 @@ permalink: /kairali-delivery/
 <script>
 // ── Quantities ──────────────────────────────────────────────────────────────
 const products = {
-    q60:  { itemId: 'item-60',  weight: 200 },
-    q100: { itemId: 'item-100', weight: 280 },
-    q250: { itemId: 'item-250', weight: 500 },
-    q500: { itemId: 'item-500', weight: 850 },
+    q60:  { itemId: 'item-60',  weight: 60  },
+    q100: { itemId: 'item-100', weight: 100 },
+    q250: { itemId: 'item-250', weight: 250 },
+    q500: { itemId: 'item-500', weight: 500 },
 };
 
 function changeQty(id, delta) {
