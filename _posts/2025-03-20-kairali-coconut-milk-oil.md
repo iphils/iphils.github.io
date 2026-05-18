@@ -15,6 +15,10 @@ Our product comes in 4 variants
 
 ## How to Order?
 
+[Order Direct from Us](/kairali-delivery/){: .button }
+
+Calculate your total with delivery and place the order directly with us.
+
 [Shop Now on MyStore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1){: .button }
 
 Or contact us via:
