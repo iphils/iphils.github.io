@@ -1,5 +1,5 @@
 ---
-layout: minimal
+layout: kairali
 title: Kairali Coconut Milk Oil
 description: Traditional coconut milk oil for healthy hair and skin.
 tags: [kairali, coconut oil, natural, hair care, skin care]
@@ -19,19 +19,15 @@ Our product comes in 4 variants
 
 Calculate your total with delivery and place the order directly with us.
 
-[Shop Now on MyStore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1){: .button }
+[Shop Now on MyStore](https://www.mystore.in/en/product/kairali-coconut-milk-oil-1){: .button .secondary }
 
 Or contact us via:
 
-<a href="https://wa.me/918281447237" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
-    <img src="/assets/img/Digital_Glyph_Dark_Green.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
-<a href="https://www.facebook.com/kairalico/" style="margin-right: 10px; display: inline-block; vertical-align: middle;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
-<a href="https://www.instagram.com/kairali_oil/" style="display: inline-block; vertical-align: middle;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 32px; height: 32px; transition: transform 0.2s;">
-</a>
+<div class="social-row">
+<a href="https://wa.me/918281447237"><img src="/assets/img/Digital_Glyph_Dark_Green.svg" style="width: 32px; height: 32px;" alt="WhatsApp"></a>
+<a href="https://www.facebook.com/kairalico/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" style="width: 32px; height: 32px;" alt="Facebook"></a>
+<a href="https://www.instagram.com/kairali_oil/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" style="width: 32px; height: 32px;" alt="Instagram"></a>
+</div>
 
 Learn what experts have to say about Virgin Coconut Oil [here](/2025/03/20/benefits)
 
